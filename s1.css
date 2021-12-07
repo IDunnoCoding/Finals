@@ -1,0 +1,13 @@
+h1{
+
+margin:25px;
+text-align:center;
+color:grey;
+font-size:35px;
+font-weight: bold;
+border: 20px;
+border-style:solid;
+border-color:green;
+border-radius: 25px;
+padding:25px
+}
