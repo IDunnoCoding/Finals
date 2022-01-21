@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+      
+        </div>
+      
+            <button type="submit" id="loginbtn" onclick="login()">Login</button>
+          <button type="button" id="cancelbtn" onclick="cancelbtn()">Cancel</button>
+        </div>
+      
+      <script >
+          let uname,upass
+
+function login(){
+    uname=document.getElementById("uname").value
+    upass=document.getElementById("psw").value
+   if(uname=="" || upass==""){
+    window.alert("Enter Username or Password.");
+   }else{
+    
+    
+   if(uname=="admin" && upass=="123"){
+    location.href = "admin.html";
+   }else{
+    window.alert("Invalid Login");
+   }
+   }
+}
+
+function cancelbtn(){
+    window.alert("This is programmed by: \nMaria Gracia");
+    //point to homepage
+}
+      </script>
+</body>
+</html>

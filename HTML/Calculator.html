@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Calculator</title>
+
+    <style>
+      .cal{
+      position: abosolute;
+      background-color:green;
+      width: auto;
+      height:auto;
+      border:5px;
+      text-align:center;
+      color:white;
+      font-size:22px;
+      font-weight: normal;
+      box-sizing: border-box;
+      border-color:darkgreen;
+      border-style:solid;
+      border-radius: 25px;
+      margin:25px;
+      padding-bottom:25px
+      }
+    </style>
+ 
+
+
+  </head>
+  <body>
+
+    <div class="cal">
+    <p id="header1" style="color:beige" align="center"><b>Sample Calculator!</b></p>
+    <div class="container-sm">
+    <label for="num1">1st Number</label>
+    <input type="number" style="width:50%" name="num1" id="num1"></input>
+    <br> </br>
+    <label for="num2">2nd Number</label>
+    <input type="number" style="width:50%" name="num2" id="num2"></input>
+    <br> </br>
+  
+    <div class="container-sm">
+    <button >Clear</button>
+    <button id="sum" onclick="Sum()">Addition</button>
+    <br> </br>
+    <button id="sum" onclick="Sub()" >Difference</button>
+    <button id="sum" onclick="Mul()" >Product</button>
+    <br> </br>
+    <button id="sum" onclick="Div()" >Quotient</button>
+    <button id="about" onclick="about()" >About</button>
+  </div>
+
+  </div>
+    <script src="yes.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
